@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import request
 
 app = Flask(__name__)
 
@@ -11,4 +12,4 @@ def user(name):
     return "<h1>Hello , {}</h1>".format(name)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = True)
